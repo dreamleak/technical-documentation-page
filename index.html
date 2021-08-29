@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="python-doc-project.css">
+    <title>Python Technical Documentation</title>
+</head>
+<body>
+    <div class="sidebar">
+        <nav id="navbar">
+          <header>
+            <h1>Python Documentation</h1>
+          </header>
+        
+        <ul>
+          <li><a href="#what_is_python?" class="nav-link">What is Python?</a></li>
+          <li><a href="#syntax" class="nav-link">Syntax</a></li>
+          <li><a href="#variables_&_data_types" class="nav-link">Variables & Data Types</a></li>
+          <li><a href="#functions" class="nav-link">Functions</a></li>
+          <li><a href="#conditionals_&_control_flow" class="nav-link">Conditionals & Control Flow</a></li>
+          <li><a href="#references" class="nav-link">References</a></li>
+        </ul>
+        </nav>
+           </div>
+        
+        
+        
+          <main id="main-doc">
+            
+            <div class="container-1">
+              <div class="box-1">
+            <section class="main-section" id="what_is_python?">
+             <header>
+               <h2>What is Python?</h2>
+             </header>
+              
+            <p>
+            Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. Its high-level built in data structures, combined with dynamic typing and dynamic binding, make it very attractive for Rapid Application Development, as well as for use as a scripting or glue language to connect existing components together.</p>
+              <p>
+                Python's simple, easy to learn syntax emphasizes readability and therefore reduces the cost of program maintenance. Python supports modules and packages, which encourages program modularity and code reuse. The Python interpreter and the extensive standard library are available in source or binary form without charge for all major platforms, and can be freely distributed.
+              </p>
+              
+              <h3>Python's versatile usage extends to:</h3>
+              
+        <ul class="reasons">
+        <li>web development (server-side),</li>
+          <li>software development,</li>
+          <li>mathematics, and</li>
+          <li>system scripting.</li>
+              </ul>
+              
+              
+              <h3>Reasons to learn Python:</h3>
+              
+              <ul class="reasons">
+               <li>Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).</li>
+               <li>Python has a simple syntax similar to the English language.</li>
+               <li>Python has syntax that allows developers to write programs with fewer lines than some other programming languages.</li>
+               <li>Python runs on an interpreter system, meaning that code can be executed as soon as it is written. This means that prototyping can be very quick.</li>
+            <li>Python can be treated in a procedural way, an object-oriented way or a functional way.</li>
+              </ul>
+                
+          
+                      <h4>Hello World example:</h4>
+                
+                <p class="example"> Hello, World! program 
+        The typical practice when learning a new programming language is to write what's called a "Hello, World!" program. This program is simply one that will print the phrase "Hello, World!" to the screen. In Python, this couldn't be easier. Simply type:</p>
+                
+                <span>
+                <code>
+                 &nbsp;&nbsp;print("Hello, World!")
+                 </code> 
+                 </span>
+              
+        </section>
+              </div>
+            
+              <div class="box-2">
+            <section class="main-section" id="syntax">
+                <header>
+               <h2>Syntax</h2>
+             </header>
+              
+             
+               <h3>Python Indentation</h3>
+         <p>
+           <strong>Indentation</strong> refers to the spaces at the beginning of a code line.
+        
+        Where in other programming languages the indentation in code is for readability only, the indentation in Python is very important.
+        
+        Python uses indentation to indicate a block of code, and will give you an error if you skip the indentation.
+           </p>
+        <div>
+              <h4>proper form; if 5 > 2:</h4>
+               <span>
+               <code>
+              &nbsp;&nbsp;&nbsp;print("Five is greater than two!")
+               </code>
+                 </span>
+              </div>
+              <br>
+              <div>
+                
+              <h4>syntax error:</h4>      
+              
+              <span>
+               <code>
+        print("Five is greater than two!")
+               </code>
+              </span>
+              </div>
+        </section>
+              </div>
+        
+              
+              <div class="box-3">
+            <section class="main-section" id="variables_&_data_types">
+              <header>
+               <h2>Variables & Data Types</h2>
+             </header>
+              
+              <p>
+                <strong>Variables</strong> are containers for storing data values.
+              </p>
+          <p>
+           Python has no command for declaring a variable. A variable is created the moment you first assign a value to it.
+          </p>
+                <p>
+                Think of a variable as a name attached to a particular object. In Python, variables need not be declared or defined in advance, as is the case in many other programming languages. To create a variable, you just assign it a value and then start using it. Assignment is done with a single equals sign (=):
+              </p>
+                   
+                 <div>
+                <code>
+          >>> n = 300
+                </code>
+              </div>
+        
+               
+              <p>
+        This is read or interpreted as “n is assigned the value 300.” Once this is done, n can be used in a statement or expression, and its value will be substituted:
+                </p>
+                
+                 <div>
+                <code>
+                 >>> &nbsp;print(n)</code>
+                 </div>
+                 <div>
+                  <p><code>300</code></p> 
+                </div>
+                
+                <h3>Built-in Data Types</h3>
+                <p>In programming, data type is an important concept.</p>
+        
+                <p>Variables can store data of different types, and different types can do different things.</p>
+        
+                <p>Python has the following data types built-in by default, in these categories:</p>
+                
+         
+        <table class="datatypes">
+        <tr>
+            <th>Text Type</th>
+            <th>Numeric Types</th>
+            <th>Sequence Types</th>
+              <th>Mapping Type</th>
+            <th>Set Types</th>
+            <th>Boolean Types</th>
+              <th>Binary Types</th>
+          </tr>
+           <tr>
+            <td>str</td>
+            <td>int, float, complex</td>
+            <td>list, tuple, range</td>
+             <td>dict</td>
+             <td>set, frozenset</td>
+             <td>bool</td>
+             <td>bytes, bytearray, memory, view</td>
+          </tr>
+                </table>
+         
+               
+            </section>
+             </div>
+              
+        
+        
+            <div class="box-4">
+            <section class="main-section" id="functions">
+                <header>
+               <h2>Functions</h2>
+             </header>
+              
+              <p>
+                A function is a block of code which only runs when it is called. You can pass data, known as parameters, into a function. A function can return data as a result.
+              </p>
+              
+              <h3>Creating a Function</h3>
+              
+              <p>In Python a function is defined using the def keyword:</p>
+              
+              <div>
+                <code>
+                  def my_function():
+                </code> 
+              </div>
+              
+              <pre></pre><br>
+              
+              <div>
+              <code>
+                &nbsp; &nbsp;print("Hello from a function")
+               </code>
+              </div>
+              
+              <h3> Defining a Function</h3>
+              <p>
+        You can define functions to provide the required functionality. Here are simple rules to define a function in Python.
+        Function blocks begin with the keyword def followed by the function name and parentheses ( ( ) ).</p>
+        
+              <p>
+        Any input parameters or arguments should be placed within these parentheses. You can also define parameters inside these parentheses.</p>
+        
+        <p>The first statement of a function can be an optional statement - the documentation string of the function or docstring.</p>
+        
+              <p>The code block within every function starts with a colon (:) and is indented.</p>
+        
+        <p>The statement return [expression] exits a function, optionally passing back an expression to the caller. A return statement with no arguments is the same as return None.
+              </p>
+              
+              <h3>Calling a Function</h3>
+              <p>To call a function, use the function name followed by parenthesis:</p>
+        
+        
+               <div>
+                <code>
+                  def my_function():
+                </code> 
+              </div>
+              
+              <pre></pre><br>
+              
+              <div>
+              <code>
+                &nbsp; &nbsp;print("Hello from a function")
+               </code>
+              </div>
+            
+              
+              
+             <div class="box-5">
+            <section class="main-section" id="conditionals_&_control_flow">
+              <header>
+               <h2>Conditionals & Control Flow</h2>
+             </header>
+              
+              <p>
+              <p>In computer science, <strong>conditionals</strong> (that is, conditional statements, conditional expressions and conditional constructs,) are programming language commands for handling decisions. Specifically, conditionals perform different computations or actions depending on whether a programmer-defined boolean condition evaluates to true or false.</p>
+              <p>
+        In programming languages, most of the time in large projects we have to control the flow of execution of our program and we want to execute some set of statements only if the given condition is satisfied, and a different set of statements when it’s not satisfied.
+        </p>
+              <p>
+        Conditional statements are also known as decision-making statements. We need to use these conditional statements to execute the specific block of code if the given condition is true or false.</p>
+        
+              <p>
+        In Python we can achieve decision making by using the following statements:
+              </p>
+        <ul>
+          <li>if statements</li>
+          <li>if-else statements</li>
+        <li>elif statements</li>
+        <li>Nested if and if-else statements</li>
+          <li>elif ladder</li>
+          </ul>
+          
+              
+              <h3><code>if</code> statements</h3>
+              
+              <p>Python if statement is one of the most commonly used conditional statements in programming languages. It decides whether certain statements need to be executed or not. It checks for a given condition, if the condition is true, then the set of code present inside the ”<code> if </code>” block will be executed otherwise not.<p>
+        
+        <p>The if condition evaluates a Boolean expression and executes the block of code only when the Boolean expression becomes TRUE.</p>
+              
+               <div>
+                <code>
+                  if boolean_expression:<pre></pre>
+            statement(s)
+                </code> 
+               </div>
+              <br>
+        
+               <div> <code>a = 2</code></div><pre></pre><br>
+               <div><code>b = 5</code></div><pre></pre><br>
+               <pre></pre>
+               
+               <div><code>if a < b :</code></div><pre></pre><br>
+                 
+                 <div><code>&nbsp;&nbsp;&nbsp;print(a, 'is less than', b)</code></div>
+        </section>
+            </div>
+              
+              
+              
+              
+              
+              <div class="box-6">
+            <section class="main-section" id="references">
+                <header>
+               <h2>References</h2>
+             </header>
+              
+              <div class="reference-links">
+                <p>All information listed in this documentation is sourced from the following:</p>
+                </pre></pre>
+                
+                <a href="https://www.python.org/doc/">Official Python™ Doc</a> <pre></pre>
+                <a href="https://www.w3schools.com/python/default.asp">W3Schools™ | Python</a><pre></pre>
+                <a href="https://developer.mozilla.org/en-US/docs/Glossary/Python">MDN™ | Python</a>
+              </div>
+              
+                </section>
+        
+              
+            </div>
+</body>
+</html>
